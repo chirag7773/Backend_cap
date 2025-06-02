@@ -30,7 +30,8 @@ builder.Services.AddCors(options =>
         policy.WithOrigins(
                 "http://localhost:3000", // Default React port
                 "http://localhost:3001", // Common alternate React port
-                "http://localhost:5173"  // Vite default port
+                "http://localhost:5173",  // Vite default port
+                "https://witty-grass-0f8dab300.6.azurestaticapps.net"
             )
             .AllowAnyHeader()
             .AllowAnyMethod()
